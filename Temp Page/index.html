@@ -5,13 +5,19 @@
     <style>
         .center_container 
         {
-            display: grid;
+            display: flex;
+            justify-content: center;
             place-items: center;
             min-height: 60vh; 
         }   
+        .inner
+        {
+            margin:0, auto;
+        }
         .gray_text
         {
-            align-items: center;
+            font-size: 24px;
+            text-align: center;
             color: gray;
         }
 
@@ -21,12 +27,11 @@
 <div class="back">
 
     <div class="center_container">
-        <img src="logo-small.jpg">
-        <div>
-            <div class="gray_text">
-                Thanks for visiting.
-                We're preparing for this page.
-            </div>
+        <img class="inner" src="logo-small.jpg">
+        <div class="inner gray_text">
+            Thanks for visiting
+            <br>
+            The page will be prepared soon
         </div>
     </div>
 </div>
